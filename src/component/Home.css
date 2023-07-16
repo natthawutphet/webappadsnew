@@ -1,0 +1,44 @@
+#Headder {
+    background-attachment: fixed;
+    background: url('img/bg5.jpg');
+    background-size: cover;
+    height: 500px;
+    color: rgb(255, 255, 255);
+}
+footer {
+    background-color: black;
+    color: azure;
+}
+
+@media screen and (max-width:480px) {
+    header {
+        height: 250px;
+    }    
+}
+
+/* สไลด์ลงมาจากด้านบน */
+@keyframes slideDown {
+    0% {
+      transform: translateY(-100%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  /* ใส่เอฟเฟกต์การเคลื่อนไหวให้กับรูปภาพ */
+  #modalx img {
+    animation-name: slideDown;
+    animation-duration: 1.5s;
+  }
+  .modalx{
+    width: 25%;
+    margin: 0 auto;
+    align-items: center;
+    position: fixed;
+    left: 35%;
+    top: 10%;
+    display:none;
+  }
+
+   
